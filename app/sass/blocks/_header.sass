@@ -1,7 +1,51 @@
 //header
 .header
   background: $violet
-  background-color: red
+  background-color: white
+  font-family: 'Roboto', sans-serif
+  text-transform: uppercase
+  &__link
+    height: 60px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-left: -14px
+    margin-right: -14px
+    &--cart
+      position: relative
+      &:after
+        content: ""
+        width: 20px
+        height: 20px
+        position: absolute
+        background-image: url("../img/header-cart.png")
+        background-size: 100% 100%
+        left: 90%
+    &--catalog
+      display: flex
+      padding-left: 10%
+      padding-right: 10%
+      justify-content: space-around
+  &__logo
+    display: flex
+    justify-content: center
+    &--img
+      padding-top: 30px
+    &--text
+      font-family: 'Dancing Script', cursive
+      text-transform: none
+      font-size: 30px
+      padding-top: 30px
+      padding-bottom: 30px
+      position: relative
+      &:after
+        content: ""
+        position: absolute
+        width: 80%
+        height: 1px
+        display: block
+        background-color: black
+        left: 10%
   // &__title
   //   text-align: center
 //header END

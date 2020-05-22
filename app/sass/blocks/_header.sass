@@ -30,28 +30,21 @@
         text-decoration: none
         color: $black
 
-    &--mycard
-      border: 0
-      cursor: pointer
-      position: relative
-      &:hover
-        border: 0
-      &:active
-        border: 0
-      &:focus
-        border: 0
-      &:before
-        content: '0'
-        position: absolute
-        top: 0
-        right: -20px
-        height: 20px
-        width: 20px
-        background-color: $black
-        border-radius: 50%
-        color: $white
+.btn__mycard
+  position: relative
+  &:before
+    content: '0'
+    position: absolute
+    top: 0
+    right: -20px
+    height: 20px
+    width: 20px
+    background-color: $black
+    border-radius: 50%
+    color: $white
 .header__logo
   text-align: center
+  cursor: pointer
   &--img 
     height: 69px
     width: 234px
@@ -85,9 +78,46 @@
     margin-right: 40px
   &:hover
     text-decoration: none
+.header__promo
+
 .banner
-  width: 100%
+  position: relative
+  //border: 1px dashed red
   margin-bottom: 60px
+.banner__img-wrap
+  //border: 1px dashed red
+  height: 400px
+  width: 100%
+  display: flex 
+.banner__img
+  width: 100%
+  object-fit: cover
+.banner-content
+  position: absolute
+  background-color: rgba(255, 255, 255, 0.5)
+  //opacity: 0.5
+  height: 50%
+  width: 40%
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 10px
+  &__title
+    font-family: $cursive-font
+    font-size: 300
+    font-size: 40px
+    z-index: 1
+  &__text
+    font-family: $roboto-font
+    font-size: 18px
+
+
+
+
   
 
 

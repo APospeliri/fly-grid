@@ -1,8 +1,46 @@
 // main border: 1px dashed pink
 .main
     &__sets
-        background-image: url("../img/background-sets.jpg")
+        // background-image: url("../img/background-sets.jpg")
         height: 400px
         margin-left: -16px
         margin-right: -16px
         margin-top: 30px
+        position: relative
+        &--banner
+            position: absolute
+            // right: 50%
+            // bottom: 50%
+            // transform: translate(50%, -100%)
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            height: 230px
+            width: 550px
+            display: flex
+            flex-direction: column
+            align-items: center
+            background: rgba(245, 250, 250, 0.5)
+        &--text
+            font-family: 'Roboto', sans-serif
+            color: black
+            text-transform: uppercase
+            text-align: center
+        &--link
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 60px
+            width: 150px
+            background-color: white
+            font-size: 18px
+            color: black
+            text-transform: uppercase
+            text-decoration: none
+            &:hover
+                text-decoration: none
+                color: white
+                background-color: black
+                // ШРИФТ НЕ ПОЛУЧАЕТСЯ СДЕЛЬАТЬ ТОНЬШЕ :(
+            
+            

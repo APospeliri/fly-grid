@@ -120,6 +120,13 @@
       &:after
         width: 100%
         background-color: $white
+    @media only screen and (max-width : 991px)
+      &:after
+        background-color: $white
+        width: 100%
+      &:hover, &:active, &:focus
+        &:after
+          width: 80%
   &--footer-black
     font-size: 16px
     color: $black
@@ -133,6 +140,8 @@
     margin-right: 25px
     &:last-of-type
       margin-right: 0
+    @media only screen and (max-width : 767px)
+      margin-bottom: 5px
   &--footer-black-border
     position: relative
     display: inline-block

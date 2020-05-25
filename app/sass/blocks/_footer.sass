@@ -5,23 +5,40 @@
     background-color: $black
     margin-left: -16px
     margin-right: -16px
+    @media only screen and (max-width : 991px)
+      padding-top: 10px
+      padding-bottom: 10px
   &__body
     padding-top: 40px 
     padding-bottom: 25px 
+    @media only screen and (max-width : 991px)
+      padding-top: 10px 
   &__title
     font-size: 38px
     text-align: center
     font-family: $decor-font
     color: $black
     margin-bottom: 40px
+    @media only screen and (max-width : 991px)
+      margin-bottom: 10px
+      padding-top: 30px
   &__text
     font-size: 16px
     color: $black
     text-align: center
     margin-bottom: 0
+  &__form
+    padding-top: 40px
+    display: flex
+    justify-content: center
+    @media only screen and (max-width : 991px)
+      padding-top: 20px
+      padding-bottom: 20px
   &__copyright
     text-align: center
   &__nav
     display: flex
     justify-content: center
+    @media only screen and (max-width : 767px)
+      flex-wrap: wrap
 // footer END

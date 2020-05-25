@@ -1,9 +1,9 @@
-//header
+//header // border: 1px dashed pink
 .header
   background: $violet
   background-color: white
   font-family: 'Roboto', sans-serif
-  &__links
+  &__list
     display: flex
     justify-content: space-around
   &__link
@@ -18,42 +18,41 @@
       text-decoration: none
       color: black
     &--logo
-      padding-top: 50px
+      padding-top: 80px
       padding-bottom: 50px
+      font-family: 'Dancing Script', cursive
+      letter-spacing: 3px
+      color: black
+      font-size: 30px
+      text-transform: none
+      display: flex
+      flex-direction: column
+      align-items: center
+      &:after
+        content: ""
+        position: absolute
+        width: 55%
+        height: 1px
+        display: block
+        background-color: black
+        left: 22%
+        top: 120%
+    &--nav
+      font-size: 18px
+  &__icon
+    width: 20px
+    height: 20px
+    transform: translate(-150%, 0)
+  &__logo
+    position: relative
+  &__img
+    margin-bottom: 10px
   &__nav
     display: flex
     padding-left: 80px
     padding-right: 80px
     padding-top: 40px
     justify-content: space-around
-  &__icon
-    width: 20px
-    height: 20px
-    transform: translate(-150%, 0)
-  &__logo
-    display: flex
-    flex-direction: column
-    align-items: center
-    position: relative
-    &:after
-      content: ""
-      position: absolute
-      width: 55%
-      height: 1px
-      display: block
-      background-color: black
-      left: 22%
-      top: 100%
-    &--img
-      padding-top: 30px
-    &--link
-      font-size: 30px !important
-      padding-top: 30px
-      padding-bottom: 20px
-      letter-spacing: 3px !important
-      &:hover
-        text-decoration: none
-        color: black
   // &__title
   //   text-align: center
 //header END

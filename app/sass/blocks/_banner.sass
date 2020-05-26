@@ -7,14 +7,15 @@
   justify-content: center
   flex-direction: column
   background-color: rgba (245, 250, 250, 0,3)
-  // position: absolute
-  // top: 50%
-  // left: 50%
-  // transform: translate(50%, -50%)
   height: 230px
   width: 550px
-  background: rgba(245, 250, 250, 0.5)
-  &__link
+  &--little
+    height: 100%
+    width: 100%
+    border: none
+  &--pink
+    background-color: #e69185
+  &__title
     font-family: 'Dancing Script', cursive
     font-size: 50px
     letter-spacing: 3px
@@ -23,25 +24,32 @@
     &:hover
       text-decoration: none
       color: black
-    &--btn
-      font-family: 'Roboto', sans-serif
-      font-size: 16px
-      display: flex
-      align-items: center
-      justify-content: center
-      height: 40px
-      width: 190px
-      background-color: white
-      font-size: 16px
-      text-transform: uppercase
-      &:hover
-        text-decoration: none
-        color: white
-        background-color: black
+    &--little
+      padding-top: 30px
+  &__link
+    font-family: 'Roboto', sans-serif
+    font-size: 16px
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 40px
+    width: 190px
+    background-color: white
+    font-size: 16px
+    text-transform: uppercase
+    color: black
+    &:hover
+      text-decoration: none
+      color: white
+      background-color: black
   &__text
       font-family: 'Roboto', sans-serif
       font-size: 16px
       color: black
       text-transform: uppercase
       text-align: center
+      width: auto
+      &--small
+        font-size: 15px
+        padding-top: 90px
       // banner

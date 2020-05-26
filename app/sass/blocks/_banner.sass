@@ -5,6 +5,16 @@
   margin-right: -40px
   position: relative
   margin-bottom: 50px
+  @media only screen and (max-width : 1279px)
+    margin-left: -32px
+    margin-right: -32px
+  @media only screen and (max-width : 991px)
+    margin-left: -40px
+    margin-right: -40px
+  @media only screen and (max-width : 767px)
+    margin-left: -32px
+    margin-right: -32px
+    // display: none
   &--top-space
     margin-top: 50px
   &__promo
@@ -15,6 +25,8 @@
     flex-direction: column
     justify-content: center
     align-items: center
+    @media only screen and (max-width : 767px)
+      width: calc(100% - 60px)
     &--center
       height: calc(100% - 80px)
       top: 50%
@@ -23,7 +35,13 @@
     &--left
       left: 40px
       top: -40px
+      @media only screen and (max-width : 991px)
+        left: 30px
+        top: -30px
     &--right
       right: 40px
       top: -40px
+      @media only screen and (max-width : 991px)
+        right: 30px
+        top: -30px
 // banner END

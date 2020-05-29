@@ -1,21 +1,30 @@
 // .form
-//   display: flex
-//   align-items: center
-//   margin-bottom: 30px
-//   &__input
-//     font-size: 16px
-//     padding: 8px 10px
-//     line-height: 1
-//     border: 1px solid $gray
-//     display: inline-block
-//     transition: all 0.3s ease
-//     border-right: none
-//     transition: all 0.3s ease
-//     outline: none !important
-//     &::placeholder
-//       color: rgba($black, 0.8)
-//     &:hover, &:active, &:focus
-//       border: 1px solid $black
-//       border-right: none
-//       &::placeholder
-//         color: rgba($black, 1)
+.form
+  &__input
+    border: 2px solid #bcbec2
+    display: inline-block
+    outline: none
+    font-family: 'Roboto', sans-serif
+    &::placeholder
+      color: #bcbec2
+    &:active, &:focus
+      color: black
+  &__button
+    border-radius: 5px
+    cursor: pointer
+    color: white
+    background-color: black
+    border: 1px solid black
+    &:visited
+      outline: none !important
+    &:hover
+      outline: none !important
+      background-color: white
+      border: 1px solid white
+      color: black
+    &:active
+      outline: none !important
+      background-color: white
+      border: 1px solid white
+      color: black
+// form end

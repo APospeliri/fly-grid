@@ -7,12 +7,23 @@
     display: flex
     justify-content: space-around
     align-items: center
+    @media screen and (max-width : 767px)
+      flex-direction: column
+      height: auto
   &__link
     color: white
     text-transform: uppercase
     font-size: 14px
+    @media screen and (max-width : 479px)
+      font-size: 12px
     &--first
-      padding-left: 180px
+      padding-left: 145px
+      @media screen and (max-width : 1279px)
+        padding-left: 130px
+      @media screen and (max-width : 991px)
+        padding-left: 100px
+      @media screen and (max-width : 767px)
+        padding-left: 0
     &:hover
       text-decoration: none
       color: white

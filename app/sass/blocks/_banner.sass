@@ -1,0 +1,51 @@
+.banner
+  //border: 1px dashed red
+  position: relative
+  margin-bottom: 60px
+.banner__img-wrap
+  //border: 1px dashed red
+  height: 400px
+  width: 100%
+  display: flex 
+.banner__img
+  width: 100%
+  object-fit: cover
+.banner__wrap
+  position: absolute
+  &--white
+    //border: 1px dashed red
+    background-color: rgba(255, 255, 255, 0.5)
+    //opacity: 0.5
+    height: 50%
+    width: 40%
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+  &--green 
+    background-color: rgba(71, 150, 139, 0.44)
+    top: 0
+    left: 0
+    height: 100%
+    width: 50%
+    transform: translate(-10%, -10%)
+    padding: 20px
+  &--orange
+    rgba(242, 156, 77, 0.44)
+
+.banner-content
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 20px
+  &__title
+    font-family: $cursive-font
+    font-weight: 300
+    font-size: 40px
+    z-index: 1
+  &__text
+    font-family: $roboto-font
+    font-size: 18px
+    text-align: center

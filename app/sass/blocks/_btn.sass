@@ -10,7 +10,7 @@
   &:hover
     border: none 
     box-shadow: none
-    transition: 0.5s
+    transition: 0.4s
   &:active
     box-shadow: none
     border: none 
@@ -19,15 +19,19 @@
     box-shadow: none
     border: none
     outline: none
-  &__banner
+  &--banner
     padding: 12px 20px
     background-color: $white
-    &:hover
+    &:hover, &:active, &:focus
       background-color: $black
       color: $white
-    &:active
-      background-color: $black
-      color: $white
-    &:focus
-      background-color: $black
-      color: $white
+  &--form 
+    background-color: $black
+    color: $white
+    font-weight: 600
+    border: 1px solid $black
+    &:hover, &:active, &:focus
+      border: 1px solid $grey-light
+      background-color: $white
+      color: $black
+      

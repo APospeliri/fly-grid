@@ -39,24 +39,26 @@
       width: 250px
       height: 200px
   &--orange
+    position: absolute
     background-color: rgba(212, 146, 32, 0.4)
     height: 320px
     width: 440px
-    padding: 100px, 40px
-    bottom: 10%
-    left: 620px
-    @media only screen and (max-width : 1279px)
-      left: 480px
+    bottom: 30%
+    right: 5%
     @media only screen and (max-width : 991px)
-      left: 240px
+      right: 0
+      transform: translateX(-33%)
     @media only screen and (max-width : 767px)
+      transform: translateX(0)
       width: 350px
       height: 250px
-      left: 50px
+      bottom: 47%
+      right: 10%
     @media only screen and (max-width : 479px)
-      left: 5px
       width: 250px
       height: 200px
+      bottom: 57%
+      left: 10%
   &--footer
     width: 100%
     height: 100%
@@ -84,7 +86,7 @@
       @media only screen and (max-width : 767px)
         margin-bottom: 10px
         margin-top: 10px
-        line-height: 45px
+        line-height: 40px
     &--space
       padding-bottom: 50px
       padding-top: 50px
@@ -99,6 +101,9 @@
       margin-top: 20px
       margin-bottom: 20px
       text-align: center
+      @media only screen and (max-width : 479px)
+        line-height: 40px
+        font-size: 35px
     &--pinkcard
       @media only screen and (max-width : 767px)
         font-size: 40px
@@ -119,6 +124,10 @@
       text-decoration: none
       color: white
       background-color: black
+    @media only screen and (max-width : 479px)
+      height: 25px
+      width: 150px
+      font-size: 14px
   &__text
       font-family: 'Roboto', sans-serif
       font-size: 16px
@@ -131,6 +140,8 @@
         color: black
       &--sets
         text-transform: uppercase
+        @media only screen and (max-width : 767px)
+          font-size: 15px
       &--link
         text-decoration: underline
       &--small
@@ -144,6 +155,8 @@
         line-height: 30px
         @media only screen and (max-width : 991px)
           font-size: 20px
+        @media only screen and (max-width : 479px)
+          font-size: 15px
       &--center
         padding: 0
         padding-left: 150px

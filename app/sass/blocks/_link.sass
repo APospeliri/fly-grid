@@ -7,16 +7,10 @@
     text-decoration: none
     color: $black
   &--user
-    //border: 1px solid red
-    font-family: $roboto-font
     font-size: 14px
-    text-transform: uppercase
-    //&:not(:last-child)
     margin-right: 20px
-    color: $black
   &--header
     position: relative
-    //border: 1px solid red
     padding-bottom: 21px
     overflow: hidden
     &:not(:last-child)
@@ -33,6 +27,43 @@
     &:hover, &:active, &:focus
       &:after
         left: 0
+  &--footer
+    color: $white
+    font-size: 14px
+    letter-spacing: 1px
+    &:hover, &:active, &:focus
+      color: $white
+  &--point-sale
+    text-transform: none
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -4px
+      height: 1px
+      width: 100%
+      background-color: $black
+  &--bottom  
+    font-size: 13px
+    text-transform: none
+    position: relative
+    &:not(:last-child)
+      margin-right: 20px
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -3px
+      width: 100%
+      height: 1px
+      background-color: transparent
+      transition: 0.4s
+    &:hover, &:active, &:focus
+      text-decoration: none
+      color: $black
+      &:after
+        background-color: $black
          
         
 

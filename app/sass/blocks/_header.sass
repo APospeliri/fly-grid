@@ -1,84 +1,44 @@
 //header
 .header
-.header__top
-  display: flex
-  justify-content: space-between
-  padding: 15px
-  margin-bottom: 10px
-.language
-  display: flex
-  &__text
-    font-family: $roboto-font
-    font-size: 14px
-    text-transform: uppercase
-    margin-left: 10px
-    cursor: pointer
-.personal
-  padding-right: 20px
-  &__nav
-    font-family: $roboto-font
-    font-size: 14px
-    text-transform: uppercase
-    margin-left: 20px
-    color: $black
-    &--points
-      &:hover
-        text-decoration: none
-        color: $black
-    &--login
-      &:hover
-        text-decoration: none
-        color: $black
-
-.btn--mycard
-  position: relative
-  &:before
-    content: '0'
-    position: absolute
-    top: 0
-    right: -20px
+  &__top
+    display: flex
+    justify-content: space-between
+    padding: 15px
+    margin-bottom: 10px
+  &__counter
+    display: inline-block
     height: 20px
     width: 20px
     background-color: $black
     border-radius: 50%
     color: $white
-.header__logo
-  text-align: center
-  cursor: pointer
-  &-img 
-    height: 69px
-    width: 234px
-    margin-bottom: 25px
-  &-discription 
-    font-family: $cursive-font
-    font-size: 26px
-    letter-spacing: 1.2
-    line-height: 1.2
-    position: relative
-    &:after
-      content: ''
-      position: absolute
-      bottom: -25px
-      left: 50%
-      height: 1px
-      width: 300px
-      background-color: $black
-      transform: translateX(-50%)
+  &__logo
+    text-align: center
+    cursor: pointer
+    &-img 
+      height: 69px
+      width: 234px
+      margin-bottom: 25px
+    &-discription 
+      font-family: $cursive-font
+      font-size: 26px
+      letter-spacing: 1.2
+      line-height: 1.2
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        bottom: -25px
+        left: 50%
+        height: 1px
+        width: 300px
+        background-color: $black
+        transform: translateX(-50%)
     
-.header__nav
-  display: flex
-  justify-content: center
-  margin: 60px 0
-.header__link 
-  font-family: $roboto-font
-  font-size: 16px
-  text-transform: uppercase
-  color: $black
-  &:not(:last-child)
-    margin-right: 40px
-  &:hover
-    text-decoration: none
-.header__promo
+  &__nav
+    display: flex
+    justify-content: center
+    margin: 60px 0
 
 
 

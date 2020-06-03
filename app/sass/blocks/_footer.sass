@@ -1,11 +1,18 @@
 // footer
 .footer
-  &__nav
+  &--wrap
     height: 40px
     width: auto
-    background-color: black
+    background-color: black 
+    align-items: center
     display: flex
-    justify-content: space-around
+    margin-left: -16px
+    margin-right: -16px
+    @media screen and (max-width : 767px)
+      height: auto
+  &__nav
+    display: flex
+    justify-content: space-between
     align-items: center
     margin-left: -16px
     margin-right: -16px
@@ -18,14 +25,6 @@
     font-size: 14px
     @media screen and (max-width : 479px)
       font-size: 12px
-    &--first
-      padding-left: 145px
-      @media screen and (max-width : 1279px)
-        padding-left: 130px
-      @media screen and (max-width : 991px)
-        padding-left: 100px
-      @media screen and (max-width : 767px)
-        padding-left: 0
     &:hover
       text-decoration: none
       color: white

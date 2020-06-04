@@ -8,9 +8,13 @@
     @media only screen and (max-width : 991px)
       width: 170px
     transition: 0.5s
-    &:hover
+    &:hover, &:focus
       border: 1px solid #de97bc
       box-shadow: 5px 5px 15px #de97bc
+      transition: 0.5s
+    &:active
+      border: 1px solid #625c69
+      box-shadow: -10px -10px 20px #625c69
       transition: 0.5s
     &::placeholder
       color: #bcbec2

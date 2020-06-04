@@ -22,12 +22,27 @@
     @media only screen and ( max-width : 991px)
       flex-direction: column
       align-items: center
-  &__link, &__text
+  &__link
     font-size: 14px
     color: black
     font-family: 'Roboto', sans-serif
+    position: relative
+    transition: all 0.5s easse
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 2px
+      top: 100%
+      background-color: transparent
+      transition: 0.5s linear
+      left: 0
     &:hover
+      text-decoration: none
       color: black
+      &:after
+        background-color: black
+        transition: 0.5s linear
 // copyright END
  
 

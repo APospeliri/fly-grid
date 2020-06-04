@@ -31,7 +31,7 @@
     height: 320px
     width: 440px
     padding: 100px, 40px
-    transform: translate(10%, -15%)
+    transform: translate(10%, -10%)
     @media only screen and (max-width : 767px)
       width: 350px
       height: 250px
@@ -43,16 +43,14 @@
     background-color: rgba(212, 146, 32, 0.4)
     height: 320px
     width: 440px
-    bottom: 30%
-    right: 5%
+    right: 0
+    transform: translate(-10%, -10%)
     @media only screen and (max-width : 767px)
       width: 350px
       height: 250px
-      bottom: 47%
     @media only screen and (max-width : 479px)
       width: 250px
       height: 200px
-      bottom: 57%
   &--footer
     width: 100%
     height: 100%
@@ -70,6 +68,7 @@
     text-decoration: none
     @media only screen and (max-width : 767px)
       font-size: 30px
+      line-height: 35px
     &:hover
       text-decoration: none
       color: black
@@ -125,16 +124,21 @@
       height: 25px
       width: 150px
       font-size: 14px
+    &--offset
+      @media only screen and (max-width : 479px)
+        margin-bottom: 25px
     &--small
       width: 90px
-      height: 30px
+      height: 31px
       border-radius: 1px
       cursor: pointer
       color: white
       background-color: black
       border: 1px solid black
       transition: 0.5s
-      transform: translate(-3px, -1px)
+      transform: translateX(-5px)
+      @media only screen and (max-width : 479px)
+        transform: translate(-5px, -1px)
       &:visited
         outline: none !important
       &:hover

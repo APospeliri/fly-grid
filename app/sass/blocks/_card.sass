@@ -4,14 +4,17 @@
   border: 1px solid $grey-light
   text-align: center
   padding: 10px 20px
-  height: 100%
-  margin-bottom: 20px
-  display: block
+  height: calc(100% - 24px)
+  margin-bottom: 24px
+  display: flex
+  flex-direction: column
   overflow: hidden
-  cursor: pointer
+  justify-content: space-between
+  color: $black
   transition: 0.5s
-  &:hover
-    //border: 1px solid $black
+  &:hover, &:active, &:focus
+    color: $black
+    text-decoration: none
     box-shadow: 2px 2px 17px -4px rgba(148,143,148,1)
   &__img
     width: 100%

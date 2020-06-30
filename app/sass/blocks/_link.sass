@@ -9,8 +9,21 @@
   &--user
     font-size: 14px
     margin-right: 20px
-    @media only screen and (max-width : 991px)
-      //margin-right: 10px
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      left: 0
+      bottom: -3px
+      width: 100%
+      height: 1px
+      background-color: transparent
+      transition: 0.4s
+    &:hover, &:active, &:focus
+      text-decoration: none
+      color: $black
+      &:after
+        background-color: $black
   &--header
     position: relative
     padding-bottom: 21px

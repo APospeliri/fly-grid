@@ -16,11 +16,18 @@
     //border: 1px dashed red
     background-color: rgba(255, 255, 255, 0.5)
     //opacity: 0.5
-    height: 50%
+    height: 60%
     width: 40%
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
+    @media only screen and (max-width : 1279px)
+      height: 70%
+      width: 60%
+    @media only screen and (max-width : 767px)
+      height: 80%
+      width: 90%
+
   &--green 
     background-color: rgba(71, 150, 139, 0.44)
     top: 0
@@ -29,6 +36,13 @@
     width: 50%
     transform: translate(10%, -10%)
     padding: 20px
+    @media only screen and (max-width : 991px)
+      width: 70%
+    @media only screen and (max-width : 767px)
+      transform: translate(5.5%, -10%)
+      height: 90%
+      width: 90%
+
   &--orange
     background-color: rgba(242, 156, 77, 0.44)
     top: 0
@@ -37,6 +51,12 @@
     width: 50%
     transform: translate(-10%, -10%)
     padding: 20px
+    @media only screen and (max-width : 991px)
+      width: 70%
+    @media only screen and (max-width : 767px)
+      transform: translate(-5.5%, -10%)
+      height: 90%
+      width: 90%
 
 .banner-content
   width: 100%
@@ -45,12 +65,13 @@
   flex-direction: column
   justify-content: center
   align-items: center
-  padding: 20px
+  //padding: 20px
   &__title
     font-family: $cursive-font
     font-weight: 300
     font-size: 40px
     z-index: 1
+    text-align: center
   &__text
     font-family: $roboto-font
     font-size: 18px
